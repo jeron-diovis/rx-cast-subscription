@@ -1,6 +1,6 @@
 {
   "name": "rx-cast-subscription",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Unified subscription interface for reactive streams",
   "keywords": [
     "stream",
@@ -12,7 +12,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:jeron-diovis/package-boilerplate.git"
+    "url": "git@github.com:jeron-diovis/rx-cast-subscription.git"
   },
   "scripts": {
     "test": "karma start",
