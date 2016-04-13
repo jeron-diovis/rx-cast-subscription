@@ -1,6 +1,6 @@
 {
   "name": "rx-cast-subscription",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Unified subscription interface for reactive streams",
   "keywords": [
     "stream",
