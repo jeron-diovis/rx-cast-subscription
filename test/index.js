@@ -6,33 +6,6 @@ import Bacon from "baconjs";
 import { subject as MostSubject } from "most-subject";
 
 
-function doTest(stream, emitValue, emitError, emitEnd) {
-  const onValue = sinon.spy();
-  const onError = sinon.spy();
-  const onEnd = sinon.spy();
-
-  const subscribe = cast(stream);
-  assert.isFunction(subscribe, "subscribe is not a function");
-
-  const unsubscribe = subscribe(onValue, onError, onEnd);
-  assert.isFunction(unsubscribe, "unsubscribe is not a function");
-
-  emitValue();
-  emitError && emitError();
-  emitEnd && emitEnd();
-
-  //unsubscribe();
-
-  emitValue();
-  emitError && emitError();
-  emitEnd && emitEnd();
-
-  assert.equal(onValue.callCount, 1, "value subscription is not cleared");
-  assert.equal(onError.callCount, 1, "error subscription is not cleared");
-  assert.equal(onEnd.callCount, 1, "end subscription is not cleared");
-}
-
-
 describe("rx", () => {
 
   let stream, subscribe;
