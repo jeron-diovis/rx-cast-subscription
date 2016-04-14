@@ -16,7 +16,7 @@ module.exports = {
   output: {
     path: sysPath.join(root, "dist"),
     filename: "index.js",
-    library: "MyPackage",
+    library: "RxCastSubscription",
     libraryTarget: "umd"
   },
 
