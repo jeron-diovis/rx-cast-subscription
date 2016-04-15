@@ -4,6 +4,10 @@
   "description": "Unified subscription interface for reactive streams",
   "keywords": [
     "stream",
+    "FRP",
+    "cast",
+    "subscribe",
+    "observe",
     "rx",
     "bacon",
     "kefir",
@@ -12,7 +16,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:jeron-diovis/rx-cast-subscription.git"
+    "url": "https://github.com/jeron-diovis/rx-cast-subscription"
   },
   "scripts": {
     "test": "karma start",
